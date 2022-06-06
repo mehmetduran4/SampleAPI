@@ -1,5 +1,8 @@
 # SampleAPI
+
 Sample API Project
+
+.Net 5 ile geliştirilmiş, .Net Dependency Injection kullanılmıştır.
 
 Tanımlı endpointleri test etmek için postman istekleri hazırlanmış ve bu istekler Sample API.postman_collection.json dosyasına eklenmiştir.
 
