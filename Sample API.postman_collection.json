@@ -1,0 +1,252 @@
+{
+	"id": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+	"name": "Sample API",
+	"description": "Sample API Requests",
+	"order": [
+		"63801ef3-3a10-2cc2-7f26-e524764de547",
+		"d5478b65-f097-fc1b-d437-09b8f68a3955",
+		"aaf122d8-33c6-36ea-d802-4f18ec5bf6cf",
+		"c5dec54a-cf0b-6b84-a592-3c2abc0b2dcd",
+		"ba8a2269-8aa8-a5d8-304f-38b10c50e6c8",
+		"799eab76-8fc7-a312-a292-fd337b8e5f43",
+		"b0027c47-202e-a2eb-2e5e-8c90466db425",
+		"15dce0d8-d811-c761-a75f-d1e5ee7362a2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1654547148002,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "15dce0d8-d811-c761-a75f-d1e5ee7362a2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:36315/api/menu/delete?menuItemId=111",
+			"queryParams": [
+				{
+					"key": "menuItemId",
+					"value": "111",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1654549294387,
+			"name": "Menu Delete",
+			"description": "",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"responses": []
+		},
+		{
+			"id": "63801ef3-3a10-2cc2-7f26-e524764de547",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:36315/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"data": null,
+			"dataMode": "params",
+			"name": "API Test",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1654547166780,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "799eab76-8fc7-a312-a292-fd337b8e5f43",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:36315/api/menu/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1654548942965,
+			"name": "Menu Add",
+			"description": "",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"responses": [],
+			"rawModeData": "{\n\t\"Id\" : 111,\n    \"CategoryId\" : 3,\n    \"Name\" : \"Paça\",\n    \"Description\" : \"Paça\",\n    \"SizeOrExplanation\": \"400 ml\",\n    \"Price\" : 45,\n    \"Order\" : 5,\n    \"Days\" : [ 0,1,2,3,4,5,6 ]\n}"
+		},
+		{
+			"id": "aaf122d8-33c6-36ea-d802-4f18ec5bf6cf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:36315/api/order/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1654549504365,
+			"name": "Add Order",
+			"description": "",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"responses": [],
+			"rawModeData": "{\n\t\"menuItems\": [1,8,5]\n}"
+		},
+		{
+			"id": "b0027c47-202e-a2eb-2e5e-8c90466db425",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:36315/api/menu/update",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Menu Update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1654549059475,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"Id\" : 111,\n    \"CategoryId\" : 3,\n    \"Name\" : \"Paça\",\n    \"Description\" : \"Paça\",\n    \"SizeOrExplanation\": \"400 ml\",\n    \"Price\" : 55,\n    \"Order\" : 6,\n    \"Days\" : [ 0,1,2,3,4,5,6 ]\n}"
+		},
+		{
+			"id": "ba8a2269-8aa8-a5d8-304f-38b10c50e6c8",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:36315/api/order/getOrder?orderId=13e618e5-f553-4897-a5bc-577837a15ad9",
+			"queryParams": [
+				{
+					"key": "orderId",
+					"value": "13e618e5-f553-4897-a5bc-577837a15ad9",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1654548778598,
+			"name": "Get Order Info",
+			"description": "",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"responses": []
+		},
+		{
+			"id": "c5dec54a-cf0b-6b84-a592-3c2abc0b2dcd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:36315/api/order/getList",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Order List",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1654548513086,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "d5478b65-f097-fc1b-d437-09b8f68a3955",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:36315/api/menu/getlist",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1654549507292,
+			"name": "Menu List",
+			"description": "",
+			"collectionId": "c7208df1-b87d-a1f1-e7bc-6e29caa41a68",
+			"responses": [],
+			"rawModeData": "{\n\t\"dayIndex\": 6\n}"
+		}
+	]
+}
